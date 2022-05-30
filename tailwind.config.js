@@ -14,6 +14,7 @@ module.exports = {
         mainColor: '#e50914',
         hoverColor: '#f53842',
         fontColor: '#757575',
+        tagColor: '#303030'
       },
       screens: {
         sm: "480px",

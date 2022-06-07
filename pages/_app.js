@@ -1,8 +1,15 @@
-import Layout from '../components/Layout/Layout'
-import '../styles/globals.css'
+import Layout from "../components/Layout/Layout";
+import { AuthContextProvider } from "../store/auth-context";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Layout><Component {...pageProps} /></Layout>
+  return (
+    <AuthContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </AuthContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
